@@ -35,7 +35,7 @@ endif
 #===============================================================================
 
 LOCAL_C_INCLUDES        := $(LOCAL_PATH)/src/common
-LOCAL_C_INCLUDES        += $(call project-path-for,qcom-media)/libplatformconfig
+LOCAL_C_INCLUDES        += $(TOP)/hardware/qcom/media/libplatformconfig
 
 LOCAL_HEADER_LIBRARIES := \
         libutils_headers \
@@ -70,7 +70,7 @@ include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 
 LOCAL_C_INCLUDES        := $(LOCAL_PATH)/src/common
-LOCAL_C_INCLUDES        += $(call project-path-for,qcom-media)/libplatformconfig
+LOCAL_C_INCLUDES        += $(TOP)/hardware/qcom/media/libplatformconfig
 
 LOCAL_HEADER_LIBRARIES := \
         libutils_headers \
